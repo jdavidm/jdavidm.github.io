@@ -1,8 +1,8 @@
 v 0.1
 d
-d 'StataConfig': some basic ado files
+d 'WeatherConfig': run some code on weather data
 d
-d Distribution-Date: 20200523
+d Distribution-Date: 20200630
 d
 d Author: Jeffrey D. Michler
 d Support: jdmichler@arizona.edu
