@@ -1,3 +1,0 @@
-v 1.0
-d Jeffrey D. Michler, jdmichler@arizona.edu
-p 'Stata': some code snippets that I don't want to keep writing
