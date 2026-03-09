@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey D. Michler | Applied Economist</title>
+    <meta name="description" content="Personal website of Jeffrey D. Michler. Associate Professor of Agricultural and Applied Economics at the University of Arizona.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Jeff Michler</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="cv.html" class="nav-link">CV & Bio</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                <li><a href="https://aidelab.arizona.edu/" class="nav-link" target="_blank">AIDE Lab <i class="fas fa-external-link-alt" style="font-size:0.8em; margin-left:4px;"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Using a placeholder background image for now -->
+        <img src="photos/DSC_0160.JPG" alt="Hero Background" class="hero-bg" onerror="this.src='https://source.unsplash.com/random/1600x900/?agriculture,farm'">
+        <div class="container relative z-10">
+            <div class="hero-content">
+                <h1>Jeffrey D. Michler</h1>
+                <p class="subtitle">Applied Economist & Associate Professor</p>
+                <p class="bio-snippet">
+                    My research focuses on the microeconomics of agricultural development, emphasizing issues of risk, technology adoption, and food security in developing economies.
+                </p>
+                <div class="flex" style="gap: 1rem; margin-top: 2rem;">
+                    <a href="cv.html" class="btn btn-primary">View Full CV</a>
+                    <a href="publications.html" class="btn btn-outline">Read Publications</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- About Section -->
+        <section class="section section-alt" id="about">
+            <div class="container">
+                <div class="split-section animate-on-scroll">
+                    <div>
+                        <h2>About Me</h2>
+                        <p>
+                            I am an Associate Professor in the <a href="https://economics.arizona.edu/">Department of Agricultural and Applied Economics</a> at the <strong>University of Arizona</strong>. I am also the founder and co-director of the <a href="https://aidelab.arizona.edu/">Applied International Development Economics (AIDE) Lab</a>.
+                        </p>
+                        <p>
+                            My work seeks to understand the social and economic processes behind environmental change and agricultural technology adoption. I use a combination of primary survey data, remote sensing, and applied econometric techniques to evaluate policies that aim to improve human well-being, particularly in data-scarce environments.
+                        </p>
+                        
+                        <h4 style="margin-top: 2rem;">Current Editorial Appointments</h4>
+                        <div class="badge-list">
+                            <span class="badge">Associate Editor, American Journal of Agricultural Economics (2026-)</span>
+                            <span class="badge">Associate Editor, European Review of Agricultural Economics (2024-)</span>
+                            <span class="badge">Associate Editor, Agricultural Economics (2023-)</span>
+                        </div>
+                    </div>
+                    <div class="profile-img-container">
+                        <!-- Using a generic image path; replace with exact headshot filename if different -->
+                        <img src="photos/Applied Econometrics.jpg" alt="Jeffrey D. Michler" class="profile-img" onerror="this.src='https://via.placeholder.com/600x600?text=Profile+Photo'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Affiliations & Quick Links -->
+        <section class="section">
+            <div class="container animate-on-scroll">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2>Affiliations</h2>
+                    <p>Organizations and initiatives I contribute to.</p>
+                </div>
+                
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="card">
+                        <i class="fas fa-university" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">University of Arizona</h3>
+                        <p class="card-meta">Associate Professor, AAE (2022-present)</p>
+                        <p class="card-meta">Affiliate, Arizona Institute for Resilience (2020-2025)</p>
+                        <p class="card-meta">Affiliate, Humanitarian Assistance Technical Support (2020-2025)</p>
+                    </div>
+                    
+                    <div class="card">
+                        <i class="fas fa-globe" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Global Initiatives</h3>
+                        <p class="card-meta">Country Affiliate, Standing Panel on Impact Assessment (2025-)</p>
+                        <p class="card-meta">Catalyst, Berkeley Initiative for Transparency in the Social Sciences (2020-)</p>
+                        <p class="card-meta">Short-Term Consultant, World Bank (2019-2022)</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-book-open" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Book Release</h3>
+                        <p>Co-authored with Anna Josephson.</p>
+                        <p class="card-meta"><strong>Research Ethics in Applied Economics: A Practical Guide</strong></p>
+                        <a href="https://www.routledge.com/Research-Ethics-in-Applied-Economics-A-Practical-Guide/Josephson-Michler/p/book/9780367457419" class="btn btn-outline-dark" style="margin-top:auto;" target="_blank">View on Routledge <i class="fas fa-external-link-alt" style="margin-left: 0.5rem; font-size: 0.8em;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Jeffrey D. Michler. All rights reserved.</p>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">McClelland Park 301K | Tucson, AZ 85721 | <a href="mailto:jdmichler@arizona.edu" style="color:var(--color-text-muted); text-decoration: underline;">jdmichler@arizona.edu</a></p>
+            </div>
+            <div class="social-links">
+                <a href="mailto:jdmichler@arizona.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://economics.arizona.edu/person/jeffrey-d-michler" title="Departmental Website" target="_blank"><i class="fas fa-university"></i></a>
+                <a href="https://orcid.org/0000-0001-7778-8703" title="ORCiD" target="_blank"><i class="fab fa-orcid"></i></a>
+                <a href="https://scholar.google.com/citations?user=your_id_here" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/jdavidm" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core JS -->
+    <script src="main.js"></script>
+</body>
+</html>
