@@ -197,7 +197,7 @@ a:hover {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: var(--color-primary-dark); /* Fallback */
+  background-color: #000000; /* Fallback */
 }
 
 .hero-bg {
@@ -209,7 +209,7 @@ a:hover {
   object-fit: cover;
   z-index: 0;
   opacity: 0.4; /* Darken background for text readability */
-  mix-blend-mode: multiply;
+
 }
 
 .hero-content {
