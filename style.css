@@ -1,10 +1,10 @@
 :root {
   /* Color Palette */
-  --color-primary: #8B0015; /* Cardinal Red */
-  --color-primary-light: #C41E3A;
-  --color-primary-dark: #5C0010;
-  --color-accent: #0C2340; /* Navy Blue Accent */
-  --color-accent-hover: #1D428A;
+  --color-primary: #1e3a8a; /* Deep Navy Blue */
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1e40af;
+  --color-accent: #f59e0b; /* Muted Gold/Amber for interactive elements */
+  --color-accent-hover: #d97706;
   
   --color-bg-main: #f8fafc; /* Very light slate for main background */
   --color-bg-surface: #ffffff; /* White for cards/containers */
@@ -197,7 +197,7 @@ a:hover {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: var(--color-primary-dark); /* Fallback */
+  background-color: #000000; /* Fallback */
 }
 
 .hero-bg {
@@ -209,7 +209,7 @@ a:hover {
   object-fit: cover;
   z-index: 0;
   opacity: 0.4; /* Darken background for text readability */
-  mix-blend-mode: multiply;
+
 }
 
 .hero-content {
@@ -506,11 +506,4 @@ a:hover {
 .badge:hover {
     background-color: var(--color-primary-light);
     color: white;
-}
-
-/* Add text shadow for better readability on lighter overlays */
-.pub-card.has-bg-image .pub-title,
-.pub-card.has-bg-image .pub-authors,
-.pub-card.has-bg-image .pub-journal {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
