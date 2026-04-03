@@ -1,0 +1,37 @@
+import re
+
+files_to_update = {
+    'index.html': 'photos/IMG_8410-2.jpg',
+    'publications.html': 'photos/IMG_7551.jpg',
+    'teaching.html': 'photos/IMG_9513.jpg',
+    'cv.html': 'photos/DSC_0216.jpg',
+    'software.html': 'photos/IMG_2588.JPG'
+}
+
+for filepath, image_src in files_to_update.items():
+    try:
+        with open(filepath, 'r') as f:
+            content = f.read()
+
+        # Try to find the hero image src and replace it
+        # Look for <img ... class="hero-bg" ...> or similar
+        # Regex to match src="..." before or after class="hero-bg"
+
+        # This is a bit tricky with regex, let's just replace the src if we know it's near hero-bg
+        # Better: use a simple script to find the tag and replace its src
+
+        # We can look for `<img` up to `class="hero-bg"`
+        def repl(match):
+            m = match.group(0)
+            return re.sub(r'src="[^"]+"', f'src="{image_src}"', m)
+
+        # Pattern to match the img tag that has class="hero-bg"
+        pattern = re.compile(r'<img[^>]+class="hero-bg"[^>]*>|<img[^>]*class="hero-bg"[^>]+>', re.IGNORECASE)
+
+        new_content = pattern.sub(repl, content)
+
+        with open(filepath, 'w') as f:
+            f.write(new_content)
+        print(f"Updated {filepath}")
+    except FileNotFoundError:
+        print(f"Skipping {filepath} - not found")
