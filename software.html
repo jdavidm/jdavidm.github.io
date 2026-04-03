@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeffrey D. Michler - Software</title>
+    <!-- Google Fonts: Roboto for clean, professional look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Jeffrey D. Michler</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="software.html" class="active">Software</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header (Hero Section) -->
+    <header class="hero page-hero">
+      <img
+        src="photos/IMG_2588.JPG"
+        alt="Software Hero Background"
+        class="hero-bg"
+      />
+      <div class="hero-content">
+        <h1>Software</h1>
+        <p>Econometric packages and tools</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <section class="content-section">
+        <div class="card">
+          <h2>randcoef</h2>
+          <p>
+            <strong>Description:</strong> Correlated Random Effects Estimation
+            of the Random Coefficients Model
+          </p>
+          <p>
+            <code>randcoef</code> is a Stata module that estimates the
+            Correlated Random Effects (CRE) model for panel data. It provides an
+            alternative to traditional fixed effects or random effects by
+            allowing for correlation between the unobserved heterogeneity and
+            the observed regressors.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://ideas.repec.org/c/boc/bocode/s458514.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on IDEAS/RePEc</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>wxsum</h2>
+          <p>
+            <strong>Description:</strong> Summary Statistics with Spatial
+            Weights
+          </p>
+          <p>
+            <code>wxsum</code> is a Stata module to calculate summary statistics
+            that incorporate spatial weighting matrices. This is particularly
+            useful in spatial econometrics to understand the distribution of
+            variables across geographical space or networks.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://ideas.repec.org/c/boc/bocode/s458428.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on IDEAS/RePEc</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Jeffrey D. Michler. All Rights Reserved.</p>
+        <div class="social-links">
+          <!-- Add social links if needed, or link to Google Scholar -->
+          <a
+            href="https://scholar.google.com/citations?user=L28X_K0AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Scholar</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
