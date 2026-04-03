@@ -1,243 +1,527 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teaching & Mentoring | Jeffrey D. Michler</title>
-    <meta name="description" content="Teaching and student supervision by Jeffrey D. Michler.">
+    <meta
+      name="description"
+      content="Teaching and student supervision by Jeffrey D. Michler."
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Core CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .teaching-section {
-            background: white;
-            border-radius: var(--radius-lg);
-            padding: var(--spacing-md);
-            box-shadow: var(--shadow-sm);
-            margin-bottom: var(--spacing-lg);
-        }
-        .course-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-        .course-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--color-border);
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-        .course-item:last-child {
-            border-bottom: none;
-        }
-        .course-id {
-            font-weight: 700;
-            color: var(--color-primary);
-        }
-        .course-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--color-text-heading);
-        }
-        .course-meta {
-            font-size: 0.9rem;
-            color: var(--color-text-muted);
-        }
-        
-        .student-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .student-card {
-            background-color: var(--color-bg-alt);
-            padding: 1rem;
-            border-radius: var(--radius-md);
-            border-left: 4px solid var(--color-primary-light);
-            transition: transform var(--transition-fast);
-        }
-        .student-card:hover {
-            transform: translateX(5px);
-        }
-        .student-name {
-            font-weight: 600;
-            color: var(--color-text-heading);
-            margin-bottom: 0.25rem;
-        }
-        .student-details {
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-        }
-    </style>
-</head>
-<body>
+      .teaching-section {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-sm);
+        margin-bottom: var(--spacing-lg);
+      }
+      .course-list {
+        list-style: none;
+        margin-top: 1rem;
+      }
+      .course-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .course-item:last-child {
+        border-bottom: none;
+      }
+      .course-id {
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+      .course-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-text-heading);
+      }
+      .course-meta {
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+      }
 
+      .student-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .student-card {
+        background-color: var(--color-bg-alt);
+        padding: 1rem;
+        border-radius: var(--radius-md);
+        border-left: 4px solid var(--color-primary-light);
+        transition: transform var(--transition-fast);
+      }
+      .student-card:hover {
+        transform: translateX(5px);
+      }
+      .student-name {
+        font-weight: 600;
+        color: var(--color-text-heading);
+        margin-bottom: 0.25rem;
+      }
+      .student-details {
+        font-size: 0.85rem;
+        color: var(--color-text-muted);
+      }
+    </style>
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-logo">Jeffrey D. Michler</a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="cv.html" class="nav-link">CV & Bio</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="teaching.html" class="nav-link active">Teaching</a></li>
-                <li><a href="https://aidelab.arizona.edu/" class="nav-link" target="_blank">AIDE Lab <i class="fas fa-external-link-alt" style="font-size:0.8em; margin-left:4px;"></i></a></li>
-            </ul>
-        </div>
+      <div class="container nav-container">
+        <a href="index.html" class="nav-logo">Jeffrey D. Michler</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="cv.html" class="nav-link">CV & Bio</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link active">Teaching</a></li>
+          <li>
+            <a
+              href="https://aidelab.arizona.edu/"
+              class="nav-link"
+              target="_blank"
+              >AIDE Lab
+              <i
+                class="fas fa-external-link-alt"
+                style="font-size: 0.8em; margin-left: 4px"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero page-header" style="min-height: 40vh; text-align: center; padding: 0;">
-        <img src="https://source.unsplash.com/random/1600x900/?university,classroom" alt="Teaching Background" class="hero-bg" onerror="this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'">
-        <div class="container relative z-10" style="padding-top: var(--spacing-xl); padding-bottom: var(--spacing-lg);">
-            <div class="hero-content">
-                <h1 class="animate-on-scroll" style="color: white; margin-bottom: 1rem;">Teaching & Mentorship</h1>
-                <p class="animate-on-scroll" style="max-width: 600px; margin: 0 auto; color: #e2e8f0; font-size: 1.25rem;">Details of the university courses I teach and the undergraduate and graduate students I advise.</p>
-            </div>
+    <header
+      class="hero page-header"
+      style="min-height: 40vh; text-align: center; padding: 0"
+    >
+      <img
+        src="https://source.unsplash.com/random/1600x900/?university,classroom"
+        alt="Teaching Background"
+        class="hero-bg"
+        onerror="
+          this.src =
+            'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'
+        "
+      />
+      <div
+        class="container relative z-10"
+        style="
+          padding-top: var(--spacing-xl);
+          padding-bottom: var(--spacing-lg);
+        "
+      >
+        <div class="hero-content">
+          <h1
+            class="animate-on-scroll"
+            style="color: white; margin-bottom: 1rem"
+          >
+            Teaching & Mentorship
+          </h1>
+          <p
+            class="animate-on-scroll"
+            style="
+              max-width: 600px;
+              margin: 0 auto;
+              color: #e2e8f0;
+              font-size: 1.25rem;
+            "
+          >
+            Details of the university courses I teach and the undergraduate and
+            graduate students I advise.
+          </p>
         </div>
+      </div>
     </header>
 
     <!-- Main Content Area -->
-    <main style="background-color: var(--color-bg-alt); padding: var(--spacing-lg) 0;">
-        <div class="container">
-            
-            <div class="split-section" style="align-items: start;">
-                <!-- Left Column: Courses -->
-                <div class="animate-on-scroll">
-                    <div class="teaching-section">
-                        <h2>University of Arizona</h2>
-                        <ul class="course-list">
-                            <li class="course-item">
-                                <span class="course-id">AAE497A/597A</span>
-                                <span class="course-title">Coding for Applied Economists</span>
-                                <span class="course-meta">Spring 2026</span>
-                            </li>
-                            <li class="course-item">
-                                <span class="course-id">AAE513/ECON513</span>
-                                <span class="course-title">Consumer Economics and Price Analysis</span>
-                                <span class="course-meta">Spring 2020 - 2026</span>
-                            </li>
-                            <li class="course-item">
-                                <span class="course-id">AAE360</span>
-                                <span class="course-title">Poverty and Development of Nations</span>
-                                <span class="course-meta">Spring 2019 - 2025</span>
-                            </li>
-                            <li class="course-item">
-                                <span class="course-id">AAE516/ECON516</span>
-                                <span class="course-title">Microeconomics of Agricultural Development</span>
-                                <span class="course-meta">Spring 2019</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="teaching-section">
-                        <h2>Previous Institutions</h2>
-                        <ul class="course-list">
-                            <li class="course-item">
-                                <span class="course-id">AREC 272 (Univ. of Saskatchewan)</span>
-                                <span class="course-title">Introduction to Agricultural Economics</span>
-                                <span class="course-meta">Spring 2018</span>
-                            </li>
-                            <li class="course-item">
-                                <span class="course-id">AGEC 217 (Purdue University)</span>
-                                <span class="course-title">Principles of Macroeconomics</span>
-                                <span class="course-meta">Instructor (Summer 2012) | TA (2011-2012)</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Right Column: Mentorship -->
-                <div class="animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="teaching-section">
-                        <h2>Graduate Student Supervision</h2>
-                        <ul class="student-list" style="display: flex; flex-direction: column;">
-                            <a href="https://aidelab.arizona.edu/person/reece-branham" target="_blank" style="text-decoration: none; color: inherit;">
-                            <li class="student-card">
-                                <div class="student-name">Reece Branham <i class="fas fa-external-link-alt" style="font-size: 0.8em; color: var(--color-primary-light); margin-left: 4px;"></i></div>
-                                <div class="student-details">MS 2025 (co-advisor) - Research Associate, TANGO International</div>
-                            </li>
-                        </a>
-                            <a href="https://aidelab.arizona.edu/person/chandrakant-agme" target="_blank" style="text-decoration: none; color: inherit;">
-                            <li class="student-card">
-                                <div class="student-name">Chandrakant Agme <i class="fas fa-external-link-alt" style="font-size: 0.8em; color: var(--color-primary-light); margin-left: 4px;"></i></div>
-                                <div class="student-details">MS 2024 (co-advisor) - Pre-Doc Applied Economics, Cornell University</div>
-                            </li>
-                        </a>
-                            <a href="https://aidelab.arizona.edu/person/dewan-al-rafi" target="_blank" style="text-decoration: none; color: inherit;">
-                            <li class="student-card">
-                                <div class="student-name">Dewan Al Rafi <i class="fas fa-external-link-alt" style="font-size: 0.8em; color: var(--color-primary-light); margin-left: 4px;"></i></div>
-                                <div class="student-details">MS 2023 (co-advisor) - PhD student AAE, University of Georgia</div>
-                            </li>
-                        </a>
-                            <a href="https://aidelab.arizona.edu/person/lorin-rudin-rush" target="_blank" style="text-decoration: none; color: inherit;">
-                            <li class="student-card">
-                                <div class="student-name">Lorin Rudin-Rush <i class="fas fa-external-link-alt" style="font-size: 0.8em; color: var(--color-primary-light); margin-left: 4px;"></i></div>
-                                <div class="student-details">MS 2023 (co-advisor) - PhD student AAE, University of Wisconsin</div>
-                            </li>
-                        </a>
-                            <a href="https://aidelab.arizona.edu/person/ann-furbush" target="_blank" style="text-decoration: none; color: inherit;">
-                            <li class="student-card">
-                                <div class="student-name">Ann Furbush <i class="fas fa-external-link-alt" style="font-size: 0.8em; color: var(--color-primary-light); margin-left: 4px;"></i></div>
-                                <div class="student-details">MS 2022 (advisor) - Analyst, Cambridge Econometrics</div>
-                            </li>
-                        </a>
-                            <a href="https://aidelab.arizona.edu/person/laura-mccann" target="_blank" style="text-decoration: none; color: inherit;">
-                            <li class="student-card">
-                                <div class="student-name">Laura McCann <i class="fas fa-external-link-alt" style="font-size: 0.8em; color: var(--color-primary-light); margin-left: 4px;"></i></div>
-                                <div class="student-details">MS 2021 (advisor) - PhD student Public Policy, University of Arizona</div>
-                            </li>
-                        </a>
-                        </ul>
-                    </div>
-
-                    <div class="teaching-section">
-                        <h2>Undergraduate Research Interns</h2>
-                        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1rem;">Recent supervised interns in Data Analysis and Applied Economics:</p>
-                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                            <a href="https://aidelab.arizona.edu/person/ella-anderson" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Ella Anderson</span></a>
-                            <a href="https://aidelab.arizona.edu/person/kieran-douglas" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Kieran Douglas</span></a>
-                            <a href="https://aidelab.arizona.edu/person/shayan-khan" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Shayan Khan</span></a>
-                            <a href="https://aidelab.arizona.edu/person/caroline-klinck" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Caroline Klinck</span></a>
-                            <a href="https://aidelab.arizona.edu/person/bryce-smets" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Bryce Smets</span></a>
-                            <a href="https://aidelab.arizona.edu/person/jacob-taylor" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Jacob Taylor</span></a>
-                            <a href="https://aidelab.arizona.edu/person/tatum-bingham" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Tatum Bingham</span></a>
-                            <a href="https://aidelab.arizona.edu/person/reece-branham" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Reece Branham</span></a>
-                            <a href="https://aidelab.arizona.edu/person/maxine-cruz" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Maxine Cruz</span></a>
-                            <a href="https://aidelab.arizona.edu/person/chi-nguyen" target="_blank" style="text-decoration: none;"><span class="badge" style="cursor: pointer;">Chi Nguyen</span></a>
-                        </div>
-                    </div>
-                </div>
+    <main
+      style="
+        background-color: var(--color-bg-alt);
+        padding: var(--spacing-lg) 0;
+      "
+    >
+      <div class="container">
+        <div class="split-section" style="align-items: start">
+          <!-- Left Column: Courses -->
+          <div class="animate-on-scroll">
+            <div class="teaching-section">
+              <h2>University of Arizona</h2>
+              <ul class="course-list">
+                <li class="course-item">
+                  <span class="course-id">AAE497A/597A</span>
+                  <span class="course-title"
+                    >Coding for Applied Economists</span
+                  >
+                  <span class="course-meta">Spring 2026</span>
+                </li>
+                <li class="course-item">
+                  <span class="course-id">AAE513/ECON513</span>
+                  <span class="course-title"
+                    >Consumer Economics and Price Analysis</span
+                  >
+                  <span class="course-meta">Spring 2020 - 2026</span>
+                </li>
+                <li class="course-item">
+                  <span class="course-id">AAE360</span>
+                  <span class="course-title"
+                    >Poverty and Development of Nations</span
+                  >
+                  <span class="course-meta">Spring 2019 - 2025</span>
+                </li>
+                <li class="course-item">
+                  <span class="course-id">AAE516/ECON516</span>
+                  <span class="course-title"
+                    >Microeconomics of Agricultural Development</span
+                  >
+                  <span class="course-meta">Spring 2019</span>
+                </li>
+              </ul>
             </div>
 
+            <div class="teaching-section">
+              <h2>Previous Institutions</h2>
+              <ul class="course-list">
+                <li class="course-item">
+                  <span class="course-id"
+                    >AREC 272 (Univ. of Saskatchewan)</span
+                  >
+                  <span class="course-title"
+                    >Introduction to Agricultural Economics</span
+                  >
+                  <span class="course-meta">Spring 2018</span>
+                </li>
+                <li class="course-item">
+                  <span class="course-id">AGEC 217 (Purdue University)</span>
+                  <span class="course-title">Principles of Macroeconomics</span>
+                  <span class="course-meta"
+                    >Instructor (Summer 2012) | TA (2011-2012)</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Mentorship -->
+          <div class="animate-on-scroll" style="transition-delay: 0.2s">
+            <div class="teaching-section">
+              <h2>Graduate Student Supervision</h2>
+              <ul
+                class="student-list"
+                style="display: flex; flex-direction: column"
+              >
+                <a
+                  href="https://aidelab.arizona.edu/person/reece-branham"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <li class="student-card">
+                    <div class="student-name">
+                      Reece Branham
+                      <i
+                        class="fas fa-external-link-alt"
+                        style="
+                          font-size: 0.8em;
+                          color: var(--color-primary-light);
+                          margin-left: 4px;
+                        "
+                      ></i>
+                    </div>
+                    <div class="student-details">
+                      MS 2025 (co-advisor) - Research Associate, TANGO
+                      International
+                    </div>
+                  </li>
+                </a>
+                <a
+                  href="https://aidelab.arizona.edu/person/chandrakant-agme"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <li class="student-card">
+                    <div class="student-name">
+                      Chandrakant Agme
+                      <i
+                        class="fas fa-external-link-alt"
+                        style="
+                          font-size: 0.8em;
+                          color: var(--color-primary-light);
+                          margin-left: 4px;
+                        "
+                      ></i>
+                    </div>
+                    <div class="student-details">
+                      MS 2024 (co-advisor) - Pre-Doc Applied Economics, Cornell
+                      University
+                    </div>
+                  </li>
+                </a>
+                <a
+                  href="https://aidelab.arizona.edu/person/dewan-al-rafi"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <li class="student-card">
+                    <div class="student-name">
+                      Dewan Al Rafi
+                      <i
+                        class="fas fa-external-link-alt"
+                        style="
+                          font-size: 0.8em;
+                          color: var(--color-primary-light);
+                          margin-left: 4px;
+                        "
+                      ></i>
+                    </div>
+                    <div class="student-details">
+                      MS 2023 (co-advisor) - PhD student AAE, University of
+                      Georgia
+                    </div>
+                  </li>
+                </a>
+                <a
+                  href="https://aidelab.arizona.edu/person/lorin-rudin-rush"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <li class="student-card">
+                    <div class="student-name">
+                      Lorin Rudin-Rush
+                      <i
+                        class="fas fa-external-link-alt"
+                        style="
+                          font-size: 0.8em;
+                          color: var(--color-primary-light);
+                          margin-left: 4px;
+                        "
+                      ></i>
+                    </div>
+                    <div class="student-details">
+                      MS 2023 (co-advisor) - PhD student AAE, University of
+                      Wisconsin
+                    </div>
+                  </li>
+                </a>
+                <a
+                  href="https://aidelab.arizona.edu/person/ann-furbush"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <li class="student-card">
+                    <div class="student-name">
+                      Ann Furbush
+                      <i
+                        class="fas fa-external-link-alt"
+                        style="
+                          font-size: 0.8em;
+                          color: var(--color-primary-light);
+                          margin-left: 4px;
+                        "
+                      ></i>
+                    </div>
+                    <div class="student-details">
+                      MS 2022 (advisor) - Analyst, Cambridge Econometrics
+                    </div>
+                  </li>
+                </a>
+                <a
+                  href="https://aidelab.arizona.edu/person/laura-mccann"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <li class="student-card">
+                    <div class="student-name">
+                      Laura McCann
+                      <i
+                        class="fas fa-external-link-alt"
+                        style="
+                          font-size: 0.8em;
+                          color: var(--color-primary-light);
+                          margin-left: 4px;
+                        "
+                      ></i>
+                    </div>
+                    <div class="student-details">
+                      MS 2021 (advisor) - PhD student Public Policy, University
+                      of Arizona
+                    </div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="teaching-section">
+              <h2>Undergraduate Research Interns</h2>
+              <p
+                style="
+                  font-size: 0.9rem;
+                  color: var(--color-text-muted);
+                  margin-bottom: 1rem;
+                "
+              >
+                Recent supervised interns in Data Analysis and Applied
+                Economics:
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                <a
+                  href="https://aidelab.arizona.edu/person/ella-anderson"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Ella Anderson</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/kieran-douglas"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Kieran Douglas</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/shayan-khan"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Shayan Khan</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/caroline-klinck"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Caroline Klinck</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/bryce-smets"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Bryce Smets</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/jacob-taylor"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Jacob Taylor</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/tatum-bingham"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Tatum Bingham</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/reece-branham"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Reece Branham</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/maxine-cruz"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Maxine Cruz</span
+                  ></a
+                >
+                <a
+                  href="https://aidelab.arizona.edu/person/chi-nguyen"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span class="badge" style="cursor: pointer"
+                    >Chi Nguyen</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div>
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Jeffrey D. Michler. All rights reserved.</p>
-                <p style="color: var(--color-text-muted); font-size: 0.9rem;">McClelland Park 301K | Tucson, AZ 85721 | <a href="mailto:jdmichler@arizona.edu" style="color:var(--color-text-muted); text-decoration: underline;">jdmichler@arizona.edu</a></p>
-            </div>
-            <div class="social-links">
-                <a href="mailto:jdmichler@arizona.edu" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://economics.arizona.edu/person/jeffrey-d-michler" title="Departmental Website" target="_blank"><i class="fas fa-university"></i></a>
-                <a href="https://orcid.org/0000-0001-7778-8703" title="ORCiD" target="_blank"><i class="fab fa-orcid"></i></a>
-                <a href="https://scholar.google.com/citations?user=your_id_here" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://github.com/jdavidm" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+      <div class="container footer-content">
+        <div>
+          <p>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Jeffrey D. Michler. All rights reserved.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem">
+            McClelland Park 301K | Tucson, AZ 85721 |
+            <a
+              href="mailto:jdmichler@arizona.edu"
+              style="color: var(--color-text-muted); text-decoration: underline"
+              >jdmichler@arizona.edu</a
+            >
+          </p>
         </div>
+        <div class="social-links">
+          <a href="mailto:jdmichler@arizona.edu" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://economics.arizona.edu/person/jeffrey-d-michler"
+            title="Departmental Website"
+            target="_blank"
+            ><i class="fas fa-university"></i
+          ></a>
+          <a
+            href="https://orcid.org/0000-0001-7778-8703"
+            title="ORCiD"
+            target="_blank"
+            ><i class="fab fa-orcid"></i
+          ></a>
+          <a
+            href="https://scholar.google.com/citations?user=your_id_here"
+            title="Google Scholar"
+            target="_blank"
+            ><i class="fas fa-graduation-cap"></i
+          ></a>
+          <a href="https://github.com/jdavidm" title="GitHub" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
     </footer>
 
     <!-- Core JS -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

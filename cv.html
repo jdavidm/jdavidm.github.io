@@ -1,113 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV | Jeffrey D. Michler</title>
-    <meta name="description" content="Curriculum Vitae of Jeffrey D. Michler.">
+    <meta
+      name="description"
+      content="Curriculum Vitae of Jeffrey D. Michler."
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Core CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .cv-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: var(--spacing-md);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-md);
-            margin-top: -3rem; /* overlap header slightly */
-            position: relative;
-            z-index: 10;
-        }
-        .page-header {
-            background-color: var(--color-primary-dark);
-            color: white;
-            padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
-            text-align: center;
-        }
-        .pdf-viewer {
-            width: 100%;
-            height: 80vh;
-            border: none;
-            border-radius: var(--radius-md);
-            background-color: #f1f5f9;
-        }
+      .cv-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: var(--spacing-md);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        margin-top: -3rem; /* overlap header slightly */
+        position: relative;
+        z-index: 10;
+      }
+      .page-header {
+        background-color: var(--color-primary-dark);
+        color: white;
+        padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+        text-align: center;
+      }
+      .pdf-viewer {
+        width: 100%;
+        height: 80vh;
+        border: none;
+        border-radius: var(--radius-md);
+        background-color: #f1f5f9;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-logo">Jeffrey D. Michler</a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="cv.html" class="nav-link active">CV & Bio</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="teaching.html" class="nav-link">Teaching</a></li>
-                <li><a href="https://aidelab.arizona.edu/" class="nav-link" target="_blank">AIDE Lab <i class="fas fa-external-link-alt" style="font-size:0.8em; margin-left:4px;"></i></a></li>
-            </ul>
-        </div>
+      <div class="container nav-container">
+        <a href="index.html" class="nav-logo">Jeffrey D. Michler</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="cv.html" class="nav-link active">CV & Bio</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li>
+            <a
+              href="https://aidelab.arizona.edu/"
+              class="nav-link"
+              target="_blank"
+              >AIDE Lab
+              <i
+                class="fas fa-external-link-alt"
+                style="font-size: 0.8em; margin-left: 4px"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero page-header" style="min-height: 40vh; text-align: center; padding: 0;">
-        <img src="https://source.unsplash.com/random/1600x900/?office,desk,books" alt="CV Background" class="hero-bg" onerror="this.src='https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'">
-        <div class="container relative z-10" style="padding-top: var(--spacing-xl); padding-bottom: var(--spacing-lg);">
-            <div class="hero-content">
-                <h1 class="animate-on-scroll" style="color: white; margin-bottom: 1rem;">Curriculum Vitae</h1>
-                <p class="animate-on-scroll" style="max-width: 600px; margin: 0 auto; color: #e2e8f0; font-size: 1.25rem;">Complete details of my academic background, appointments, and research.</p>
-            </div>
+    <header
+      class="hero page-header"
+      style="min-height: 40vh; text-align: center; padding: 0"
+    >
+      <img
+        src="https://source.unsplash.com/random/1600x900/?office,desk,books"
+        alt="CV Background"
+        class="hero-bg"
+        onerror="
+          this.src =
+            'https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'
+        "
+      />
+      <div
+        class="container relative z-10"
+        style="
+          padding-top: var(--spacing-xl);
+          padding-bottom: var(--spacing-lg);
+        "
+      >
+        <div class="hero-content">
+          <h1
+            class="animate-on-scroll"
+            style="color: white; margin-bottom: 1rem"
+          >
+            Curriculum Vitae
+          </h1>
+          <p
+            class="animate-on-scroll"
+            style="
+              max-width: 600px;
+              margin: 0 auto;
+              color: #e2e8f0;
+              font-size: 1.25rem;
+            "
+          >
+            Complete details of my academic background, appointments, and
+            research.
+          </p>
         </div>
+      </div>
     </header>
 
     <!-- Main Content Area -->
-    <main style="background-color: var(--color-bg-alt); padding-bottom: var(--spacing-xl);">
-        <div class="container">
-            <div class="cv-container animate-on-scroll">
-                
-                <div class="flex justify-between items-center" style="margin-bottom: 2rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
-                    <h2>Academic CV</h2>
-                    <a href="michler_cv.pdf" download class="btn btn-primary" title="Download PDF CV">
-                        <i class="fas fa-download" style="margin-right: 0.5rem;"></i> Download PDF
-                    </a>
-                </div>
+    <main
+      style="
+        background-color: var(--color-bg-alt);
+        padding-bottom: var(--spacing-xl);
+      "
+    >
+      <div class="container">
+        <div class="cv-container animate-on-scroll">
+          <div
+            class="flex justify-between items-center"
+            style="
+              margin-bottom: 2rem;
+              border-bottom: 1px solid var(--color-border);
+              padding-bottom: 1rem;
+            "
+          >
+            <h2>Academic CV</h2>
+            <a
+              href="michler_cv.pdf"
+              download
+              class="btn btn-primary"
+              title="Download PDF CV"
+            >
+              <i class="fas fa-download" style="margin-right: 0.5rem"></i>
+              Download PDF
+            </a>
+          </div>
 
-                <!-- PDF Embed -->
-                <div style="text-align: center; color: var(--color-text-muted); margin-bottom: 1rem;">
-                    <p>If the PDF does not load, you can <a href="michler_cv.pdf" target="_blank">view it directly here</a>.</p>
-                </div>
-                <iframe src="michler_cv.pdf" class="pdf-viewer" title="Jeffrey Michler CV PDF"></iframe>
-
-            </div>
+          <!-- PDF Embed -->
+          <div
+            style="
+              text-align: center;
+              color: var(--color-text-muted);
+              margin-bottom: 1rem;
+            "
+          >
+            <p>
+              If the PDF does not load, you can
+              <a href="michler_cv.pdf" target="_blank">view it directly here</a
+              >.
+            </p>
+          </div>
+          <iframe
+            src="michler_cv.pdf"
+            class="pdf-viewer"
+            title="Jeffrey Michler CV PDF"
+          ></iframe>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div>
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Jeffrey D. Michler. All rights reserved.</p>
-                <p style="color: var(--color-text-muted); font-size: 0.9rem;">McClelland Park 301K | Tucson, AZ 85721 | <a href="mailto:jdmichler@arizona.edu" style="color:var(--color-text-muted); text-decoration: underline;">jdmichler@arizona.edu</a></p>
-            </div>
-            <div class="social-links">
-                <a href="mailto:jdmichler@arizona.edu" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://economics.arizona.edu/person/jeffrey-d-michler" title="Departmental Website" target="_blank"><i class="fas fa-university"></i></a>
-                <a href="https://orcid.org/0000-0001-7778-8703" title="ORCiD" target="_blank"><i class="fab fa-orcid"></i></a>
-                <!-- Update this google scholar link when ready -->
-                <a href="https://scholar.google.com/citations?user=your_id_here" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://github.com/jdavidm" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+      <div class="container footer-content">
+        <div>
+          <p>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Jeffrey D. Michler. All rights reserved.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem">
+            McClelland Park 301K | Tucson, AZ 85721 |
+            <a
+              href="mailto:jdmichler@arizona.edu"
+              style="color: var(--color-text-muted); text-decoration: underline"
+              >jdmichler@arizona.edu</a
+            >
+          </p>
         </div>
+        <div class="social-links">
+          <a href="mailto:jdmichler@arizona.edu" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://economics.arizona.edu/person/jeffrey-d-michler"
+            title="Departmental Website"
+            target="_blank"
+            ><i class="fas fa-university"></i
+          ></a>
+          <a
+            href="https://orcid.org/0000-0001-7778-8703"
+            title="ORCiD"
+            target="_blank"
+            ><i class="fab fa-orcid"></i
+          ></a>
+          <!-- Update this google scholar link when ready -->
+          <a
+            href="https://scholar.google.com/citations?user=your_id_here"
+            title="Google Scholar"
+            target="_blank"
+            ><i class="fas fa-graduation-cap"></i
+          ></a>
+          <a href="https://github.com/jdavidm" title="GitHub" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
     </footer>
 
     <!-- Core JS -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
