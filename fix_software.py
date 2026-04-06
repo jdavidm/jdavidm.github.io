@@ -1,4 +1,5 @@
-<!doctype html>
+with open('software.html', 'w') as f:
+    f.write('''<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -170,4 +171,4 @@
     <!-- Core JS -->
     <script src="main.js"></script>
   </body>
-</html>
+</html>''')
