@@ -8,6 +8,10 @@ files_to_update = {
     'software.html': 'photos/IMG_2588.JPG'
 }
 
+# Pattern to match the img tag that has class="hero-bg"
+pattern = re.compile(r'<img[^>]+class="hero-bg"[^>]*>|<img[^>]*class="hero-bg"[^>]+>', re.IGNORECASE)
+src_pattern = re.compile(r'src="[^"]+"')
+
 for filepath, image_src in files_to_update.items():
     try:
         with open(filepath, 'r') as f:
@@ -23,10 +27,7 @@ for filepath, image_src in files_to_update.items():
         # We can look for `<img` up to `class="hero-bg"`
         def repl(match):
             m = match.group(0)
-            return re.sub(r'src="[^"]+"', f'src="{image_src}"', m)
-
-        # Pattern to match the img tag that has class="hero-bg"
-        pattern = re.compile(r'<img[^>]+class="hero-bg"[^>]*>|<img[^>]*class="hero-bg"[^>]+>', re.IGNORECASE)
+            return src_pattern.sub(f'src="{image_src}"', m)
 
         new_content = pattern.sub(repl, content)
 
