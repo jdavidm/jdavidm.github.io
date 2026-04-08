@@ -156,7 +156,7 @@ with open('software.html', 'w') as f:
             ><i class="fab fa-orcid"></i
           ></a>
           <a
-            href="https://scholar.google.com/citations?user=your_id_here"
+            href="https://scholar.google.com/citations?user=akcW2fkAAAAJ"
             title="Google Scholar"
             target="_blank"
             ><i class="fas fa-graduation-cap"></i
