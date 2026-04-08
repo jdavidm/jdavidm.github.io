@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software | Jeffrey D. Michler</title>
-    <meta name="description" content="Software and econometric packages by Jeffrey D. Michler." />
+    <meta
+      name="description"
+      content="Software and econometric packages by Jeffrey D. Michler."
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,8 +45,9 @@
               class="nav-link"
               target="_blank"
               rel="noopener noreferrer"
-              >AIDE Lab <i class="fas fa-external-link-alt" style="font-size: 0.8em"></i></a
-            >
+              >AIDE Lab
+              <i class="fas fa-external-link-alt" style="font-size: 0.8em"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -67,54 +71,104 @@
     <!-- Main Content Area -->
     <main class="section">
       <div class="container">
+        <div style="display: grid; gap: var(--spacing-lg)">
+          <!-- randcoef -->
+          <div
+            class="card"
+            style="
+              padding: var(--spacing-lg);
+              background-color: var(--color-bg-surface);
+              border-radius: var(--radius-lg);
+              box-shadow: var(--shadow-sm);
+              border: 1px solid var(--color-border);
+            "
+          >
+            <h2
+              style="
+                color: var(--color-primary);
+                margin-bottom: 1rem;
+                border-bottom: 2px solid var(--color-accent);
+                display: inline-block;
+                padding-bottom: 0.5rem;
+              "
+            >
+              randcoef
+            </h2>
+            <p
+              style="
+                font-size: 1.1rem;
+                color: var(--color-text-muted);
+                margin-bottom: 1rem;
+              "
+            >
+              <strong>Description:</strong> Correlated Random Effects Estimation
+              of the Random Coefficients Model
+            </p>
+            <p style="line-height: 1.7; margin-bottom: 1.5rem">
+              <code>randcoef</code> is a Stata module that estimates the
+              Correlated Random Effects (CRE) model for panel data. It provides
+              an alternative to traditional fixed effects or random effects by
+              allowing for correlation between the unobserved heterogeneity and
+              the observed regressors.
+            </p>
+            <a
+              href="https://ideas.repec.org/c/boc/bocode/s458514.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-external-link-alt"></i> View on IDEAS/RePEc
+            </a>
+          </div>
 
-        <div style="display: grid; gap: var(--spacing-lg);">
-            <!-- randcoef -->
-            <div class="card" style="padding: var(--spacing-lg); background-color: var(--color-bg-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--color-border);">
-              <h2 style="color: var(--color-primary); margin-bottom: 1rem; border-bottom: 2px solid var(--color-accent); display: inline-block; padding-bottom: 0.5rem;">randcoef</h2>
-              <p style="font-size: 1.1rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-                <strong>Description:</strong> Correlated Random Effects Estimation of the Random Coefficients Model
-              </p>
-              <p style="line-height: 1.7; margin-bottom: 1.5rem;">
-                <code>randcoef</code> is a Stata module that estimates the
-                Correlated Random Effects (CRE) model for panel data. It provides an
-                alternative to traditional fixed effects or random effects by
-                allowing for correlation between the unobserved heterogeneity and
-                the observed regressors.
-              </p>
-              <a
-                href="https://ideas.repec.org/c/boc/bocode/s458514.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary"
-              >
-                <i class="fas fa-external-link-alt"></i> View on IDEAS/RePEc
-              </a>
-            </div>
-
-            <!-- wxsum -->
-            <div class="card" style="padding: var(--spacing-lg); background-color: var(--color-bg-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--color-border);">
-              <h2 style="color: var(--color-primary); margin-bottom: 1rem; border-bottom: 2px solid var(--color-accent); display: inline-block; padding-bottom: 0.5rem;">wxsum</h2>
-              <p style="font-size: 1.1rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-                <strong>Description:</strong> Summary Statistics with Spatial Weights
-              </p>
-              <p style="line-height: 1.7; margin-bottom: 1.5rem;">
-                <code>wxsum</code> is a Stata module to calculate summary statistics
-                that incorporate spatial weighting matrices. This is particularly
-                useful in spatial econometrics to understand the distribution of
-                variables across geographical space or networks.
-              </p>
-              <a
-                href="https://ideas.repec.org/c/boc/bocode/s458428.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary"
-              >
-                <i class="fas fa-external-link-alt"></i> View on IDEAS/RePEc
-              </a>
-            </div>
+          <!-- wxsum -->
+          <div
+            class="card"
+            style="
+              padding: var(--spacing-lg);
+              background-color: var(--color-bg-surface);
+              border-radius: var(--radius-lg);
+              box-shadow: var(--shadow-sm);
+              border: 1px solid var(--color-border);
+            "
+          >
+            <h2
+              style="
+                color: var(--color-primary);
+                margin-bottom: 1rem;
+                border-bottom: 2px solid var(--color-accent);
+                display: inline-block;
+                padding-bottom: 0.5rem;
+              "
+            >
+              wxsum
+            </h2>
+            <p
+              style="
+                font-size: 1.1rem;
+                color: var(--color-text-muted);
+                margin-bottom: 1rem;
+              "
+            >
+              <strong>Description:</strong> Summary Statistics with Spatial
+              Weights
+            </p>
+            <p style="line-height: 1.7; margin-bottom: 1.5rem">
+              <code>wxsum</code> is a Stata module to calculate summary
+              statistics that incorporate spatial weighting matrices. This is
+              particularly useful in spatial econometrics to understand the
+              distribution of variables across geographical space or networks.
+            </p>
+            <a
+              href="https://ideas.repec.org/c/boc/bocode/s458428.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-external-link-alt"></i> View on IDEAS/RePEc
+            </a>
+          </div>
         </div>
-
       </div>
     </main>
 
@@ -146,21 +200,28 @@
             href="https://economics.arizona.edu/person/jeffrey-d-michler"
             title="Departmental Website"
             target="_blank"
+            rel="noopener noreferrer"
             ><i class="fas fa-university"></i
           ></a>
           <a
             href="https://orcid.org/0000-0001-7778-8703"
             title="ORCiD"
             target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-orcid"></i
           ></a>
           <a
             href="https://scholar.google.com/citations?user=your_id_here"
             title="Google Scholar"
             target="_blank"
+            rel="noopener noreferrer"
             ><i class="fas fa-graduation-cap"></i
           ></a>
-          <a href="https://github.com/jdavidm" title="GitHub" target="_blank"
+          <a
+            href="https://github.com/jdavidm"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-github"></i
           ></a>
         </div>
