@@ -2,7 +2,7 @@ import re
 
 def parse_tex_section(content, section_name):
     # Find the section and extract items until the next section
-    section_pattern = re.compile(rf'\\section{{\s*{section_name}\s*}}([\s\S]*?)\\section{{', re.IGNORECASE)
+    section_pattern = re.compile(rf'\\section{{\s*{section_name}\s*}}([\s\S]*?)(?:\\section{{|$)', re.IGNORECASE)
     match = section_pattern.search(content)
     if not match:
         return []
