@@ -34,7 +34,7 @@ def clean_item(item):
     def href_replacer(match):
         url = match.group(1)
         text = match.group(2)
-        return f'<a href="{url}" target="_blank">{text}</a>'
+        return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{text}</a>'
 
     text = re.sub(r'\\href{([^}]+)}{([^}]+)}', href_replacer, item)
 
