@@ -42,7 +42,6 @@ with open('software.html', 'w') as f:
               href="https://aidelab.arizona.edu/"
               class="nav-link"
               target="_blank" rel="noopener noreferrer"
-              rel="noopener noreferrer"
               >AIDE Lab <i class="fas fa-external-link-alt" style="font-size: 0.8em"></i></a
             >
           </li>
@@ -86,7 +85,6 @@ with open('software.html', 'w') as f:
               <a
                 href="https://ideas.repec.org/c/boc/bocode/s458514.html"
                 target="_blank" rel="noopener noreferrer"
-                rel="noopener noreferrer"
                 class="btn btn-primary"
               >
                 <i class="fas fa-external-link-alt"></i> View on IDEAS/RePEc
@@ -108,7 +106,6 @@ with open('software.html', 'w') as f:
               <a
                 href="https://ideas.repec.org/c/boc/bocode/s458428.html"
                 target="_blank" rel="noopener noreferrer"
-                rel="noopener noreferrer"
                 class="btn btn-primary"
               >
                 <i class="fas fa-external-link-alt"></i> View on IDEAS/RePEc
