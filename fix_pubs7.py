@@ -74,7 +74,7 @@ working_papers = [
 
 working_papers_html = '    <!-- Working Papers Section -->\n    <h2 class="section-title" style="margin-top: 3rem;">Working Papers</h2>\n    <div class="pub-grid animate-on-scroll">\n'
 for wp in working_papers:
-    link_html = f'<div class="pub-links">\n                    <a href="{wp["link"]}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> {wp["link_text"]}</a>\n                </div>' if "link" in wp else ''
+    link_html = f'<div class="pub-links">\n                    <a href="{wp["link"]}" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> {wp["link_text"]}</a>\n                </div>' if "link" in wp else ''
 
     working_papers_html += f"""
         <div class="pub-card has-bg-image" data-category="working" style="background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.7) 100%), url('{get_image()}'); background-size: cover; background-position: center;">
@@ -107,7 +107,7 @@ book_chapters = [
 
 book_chapters_html = '    <!-- Book Chapters Section -->\n    <h2 class="section-title" style="margin-top: 3rem;">Book Chapters</h2>\n    <div class="pub-grid animate-on-scroll">\n'
 for bc in book_chapters:
-    extra = f'\n                    <a href="{bc["extra_link"]}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> {bc["extra_text"]}</a>' if "extra_link" in bc else ''
+    extra = f'\n                    <a href="{bc["extra_link"]}" target="_blank" rel="noopener noreferrer"<i class="fas fa-file-pdf"></i> {bc["extra_text"]}</a>' if "extra_link" in bc else ''
 
     book_chapters_html += f"""
         <div class="pub-card has-bg-image" data-category="book" style="background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.7) 100%), url('{get_image()}'); background-size: cover; background-position: center;">
@@ -116,7 +116,7 @@ for bc in book_chapters:
             <p class="pub-authors">{bc['authors']}</p>
             <p class="pub-journal">{bc['journal']}</p>
             <div class="pub-links">
-                <a href="{bc['link']}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> {bc['link_text']}</a>{extra}
+                <a href="{bc['link']}" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> {bc['link_text']}</a>{extra}
             </div>
         </div>
 """

@@ -41,7 +41,7 @@ with open('software.html', 'w') as f:
             <a
               href="https://aidelab.arizona.edu/"
               class="nav-link"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               rel="noopener noreferrer"
               >AIDE Lab <i class="fas fa-external-link-alt" style="font-size: 0.8em"></i></a
             >
@@ -85,7 +85,7 @@ with open('software.html', 'w') as f:
               </p>
               <a
                 href="https://ideas.repec.org/c/boc/bocode/s458514.html"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noopener noreferrer"
                 class="btn btn-primary"
               >
@@ -107,7 +107,7 @@ with open('software.html', 'w') as f:
               </p>
               <a
                 href="https://ideas.repec.org/c/boc/bocode/s458428.html"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noopener noreferrer"
                 class="btn btn-primary"
               >
@@ -144,24 +144,24 @@ with open('software.html', 'w') as f:
             ><i class="fas fa-envelope"></i
           ></a>
           <a
-            href="https://economics.arizona.edu/person/jeffrey-d-michler"
+            href="https://aaec.arizona.edu/person/jeffrey-d-michler"
             title="Departmental Website"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             ><i class="fas fa-university"></i
           ></a>
           <a
             href="https://orcid.org/0000-0001-7778-8703"
             title="ORCiD"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             ><i class="fab fa-orcid"></i
           ></a>
           <a
             href="https://scholar.google.com/citations?user=akcW2fkAAAAJ"
             title="Google Scholar"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             ><i class="fas fa-graduation-cap"></i
           ></a>
-          <a href="https://github.com/jdavidm" title="GitHub" target="_blank"
+          <a href="https://github.com/jdavidm" title="GitHub" target="_blank" rel="noopener noreferrer"
             ><i class="fab fa-github"></i
           ></a>
         </div>

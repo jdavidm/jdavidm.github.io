@@ -4,7 +4,7 @@ from parse_wps_fixed import clean_item
 def test_clean_item_href():
     # Test href extraction
     item = r'\href{http://example.com}{Example Link}'
-    expected = '<a href="http://example.com" target="_blank">Example Link</a>'
+    expected = '<a href="http://example.com" target="_blank" rel="noopener noreferrer">Example Link</a>'
     assert clean_item(item) == expected
 
 def test_clean_item_formatting():
@@ -34,5 +34,5 @@ def test_clean_item_whitespace():
 def test_clean_item_complex():
     # Test a mix of formatting
     item = r"``\textbf{Title}'' by J\'er\'ome, \href{http://link}{Link} \$ \emph{end}\\"
-    expected = '"Title" by Jéróme, <a href="http://link" target="_blank">Link</a>  end'
+    expected = '"Title" by Jéróme, <a href="http://link" target="_blank" rel="noopener noreferrer">Link</a>  end'
     assert clean_item(item) == expected

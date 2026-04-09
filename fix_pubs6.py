@@ -13,7 +13,7 @@ working_papers_html = """
             <h3 class="pub-title">The Uses (and Misuses) of Weather and Earth Observation Data in Geospatial Impact Evaluations</h3>
             <p class="pub-authors">Benami, E., M. Cecil, A. Josephson, G. Maskell, and J.D. Michler</p>
             <div class="pub-links">
-                <a href="http://arxiv.org/abs/2510.05108" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Paper</a>
+                <a href="http://arxiv.org/abs/2510.05108" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> View Paper</a>
             </div>
         </div>
 
@@ -90,7 +90,7 @@ book_chapters_html = """
             <p class="pub-authors">Michler, J.D. and A. Josephson. 2022.</p>
             <p class="pub-journal">In J. Roosen and J.E. Hobbs, eds., A Modern Guide to Food Economics. Cheltenham: Edward Elgar Publishing.</p>
             <div class="pub-links">
-                <a href="https://doi.org/10.4337/9781800372054.00019" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Chapter</a>
+                <a href="https://doi.org/10.4337/9781800372054.00019" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> View Chapter</a>
             </div>
         </div>
 
@@ -100,8 +100,8 @@ book_chapters_html = """
             <p class="pub-authors">Furbush, A., A. Josephson, T. Kilic, and J.D. Michler. 2021.</p>
             <p class="pub-journal">In R. Arezki, S. Djankov, and U. Panizza, eds., Shaping Africa’s Post-Covid Recovery. London: CEPR Press.</p>
             <div class="pub-links">
-                <a href="https://voxeu.org/content/shaping-africa-s-post-covid-recovery" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Chapter</a>
-                <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/810651614623398314/the-evolving-socioeconomic-impacts-of-covid-19-in-four-african-countries" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Working Paper</a>
+                <a href="https://voxeu.org/content/shaping-africa-s-post-covid-recovery" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> View Chapter</a>
+                <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/810651614623398314/the-evolving-socioeconomic-impacts-of-covid-19-in-four-african-countries" target="_blank" rel="noopener noreferrer"<i class="fas fa-file-pdf"></i> Working Paper</a>
             </div>
         </div>
     </div>
