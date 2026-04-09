@@ -1,10 +1,10 @@
 :root {
   /* Color Palette */
-  --color-primary: #1e3a8a; /* Deep Navy Blue */
-  --color-primary-light: #3b82f6;
-  --color-primary-dark: #1e40af;
-  --color-accent: #f59e0b; /* Muted Gold/Amber for interactive elements */
-  --color-accent-hover: #d97706;
+  --color-primary: #CC0033; /* Cardinal Red */
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #990000;
+  --color-accent: #0C2340; /* Navy Blue */
+  --color-accent-hover: #1D428A;
   
   --color-bg-main: #f8fafc; /* Very light slate for main background */
   --color-bg-surface: #ffffff; /* White for cards/containers */

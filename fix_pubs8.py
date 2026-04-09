@@ -29,21 +29,21 @@ book_chapters = [
 injected_html = '\n      <!-- Book Chapters Section -->\n      <h2 class="section-title" style="margin-top: 3rem;">Book Chapters</h2>\n      <div class="pub-grid animate-on-scroll">\n'
 
 for bc in book_chapters:
-    extra = f'\n              <a href="{bc["extra_link"]}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> {bc["extra_text"]}</a>' if "extra_link" in bc else ''
+    extra = f'\n              <a href="{bc["extra_link"]}" target="_blank" rel="noopener noreferrer"<i class="fas fa-file-pdf"></i> {bc["extra_text"]}</a>' if "extra_link" in bc else ''
     injected_html += f"""        <div class="pub-card" data-category="book">
           <span class="card-tag" style="background-color: var(--color-accent); color: white;">Book Chapter</span>
           <h3 class="pub-title">{bc['title']}</h3>
           <p class="pub-authors">{bc['authors']}</p>
           <p class="pub-journal">{bc['journal']}</p>
           <div class="pub-links">
-              <a href="{bc['link']}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> {bc['link_text']}</a>{extra}
+              <a href="{bc['link']}" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> {bc['link_text']}</a>{extra}
           </div>
         </div>\n"""
 injected_html += '      </div>\n'
 
 injected_html += '\n      <!-- Working Papers Section -->\n      <h2 class="section-title" style="margin-top: 3rem;">Working Papers</h2>\n      <div class="pub-grid animate-on-scroll">\n'
 for wp in working_papers:
-    link_html = f'<div class="pub-links">\n              <a href="{wp["link"]}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> {wp["link_text"]}</a>\n          </div>' if "link" in wp else ''
+    link_html = f'<div class="pub-links">\n              <a href="{wp["link"]}" target="_blank" rel="noopener noreferrer"<i class="fas fa-external-link-alt"></i> {wp["link_text"]}</a>\n          </div>' if "link" in wp else ''
     injected_html += f"""        <div class="pub-card" data-category="working">
           <span class="card-tag" style="background-color: var(--color-secondary); color: white;">Working Paper</span>
           <h3 class="pub-title">{wp['title']}</h3>
