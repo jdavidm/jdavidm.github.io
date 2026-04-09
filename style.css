@@ -1,10 +1,10 @@
 :root {
   /* Color Palette */
-  --color-primary: #CC0033; /* Cardinal Red */
-  --color-primary-light: #FF3366;
-  --color-primary-dark: #990000;
-  --color-accent: #0C2340; /* Navy Blue */
-  --color-accent-hover: #1D428A;
+  --color-primary: #AB0520; /* Cardinal Red */
+  --color-primary-light: #D6082A;
+  --color-primary-dark: #7A0316;
+  --color-accent: #0C234B; /* Navy Blue */
+  --color-accent-hover: #1A3C78;
   
   --color-bg-main: #f8fafc; /* Very light slate for main background */
   --color-bg-surface: #ffffff; /* White for cards/containers */
