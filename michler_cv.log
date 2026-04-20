@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.1)  1 APR 2026 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.20)  20 APR 2026 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,7 +402,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
-st/fonts/enc/dvips/base/8r.enc}]
+st/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-su
+per-t1.enc}]
 Overfull \hbox (0.51894pt too wide) in paragraph at lines 161--162
  \T1/pplj/m/n/10 ``Com-ment on Suri (2011) `Se-lec-tion and Com-par-a-tive Ad-v
 an-tage in Tech-nol-ogy Adop-tion'.'' \T1/pplj/m/it/10 Econo-
@@ -457,37 +458,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--258
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--273
+Underfull \hbox (badness 10000) in paragraph at lines 258--278
 
  []
 
 
-Overfull \hbox (7.61877pt too wide) in paragraph at lines 258--273
+Overfull \hbox (7.61877pt too wide) in paragraph at lines 258--278
+[]
+ []
+
+
+Overfull \hbox (7.61877pt too wide) in paragraph at lines 258--278
 [] 
  []
 
-[4]
-Overfull \hbox (7.61877pt too wide) in paragraph at lines 275--279
-[] 
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 283--292
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 282--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--305
+Underfull \hbox (badness 10000) in paragraph at lines 298--304
 
  []
 
 
-Overfull \hbox (157.73994pt too wide) in paragraph at lines 307--316
+Overfull \hbox (157.73994pt too wide) in paragraph at lines 306--315
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--316
+Underfull \hbox (badness 10000) in paragraph at lines 306--315
 
  []
 
@@ -507,32 +508,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
  []
 
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 381--400
+Overfull \hbox (24.0pt too wide) in paragraph at lines 381--394
 [][] 
  []
 
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 401--413
+Overfull \hbox (24.0pt too wide) in paragraph at lines 395--412
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--413
+Underfull \hbox (badness 10000) in paragraph at lines 395--412
 
  []
 
 [7]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 415--423
+Overfull \hbox (12.0pt too wide) in paragraph at lines 414--433
 [][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 424--435
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 414--433
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--458
+Underfull \hbox (badness 10000) in paragraph at lines 433--454
 
  []
 
@@ -546,23 +547,22 @@ Package rerunfilecheck Info: File `michler_cv.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  10065 strings out of 476182
- 154732 string characters out of 5795596
- 1942975 words of memory out of 5000000
+ 154736 string characters out of 5795595
+ 1943975 words of memory out of 5000000
  31900 multiletter control sequences out of 15000+600000
  608907 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,10n,79p,1257b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/jules/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600
-pk></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
-ri8a.pfb>
-Output written on michler_cv.pdf (10 pages, 147512 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
+uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on michler_cv.pdf (10 pages, 170671 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
