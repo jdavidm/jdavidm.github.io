@@ -16,11 +16,12 @@ def get_items(start_marker, end_marker=None):
             section_content = content[start_idx:]
 
         items = []
+        subitem_pattern = re.compile(r'\\subitem(?:\[\d+\])?')
         for line in section_content.split('\n'):
             line = line.strip()
             if line.startswith('\\subitem'):
                 # remove any [number] part if present (e.g. \subitem[16])
-                line = re.sub(r'\\subitem(?:\[\d+\])?', '', line).strip()
+                line = subitem_pattern.sub('', line).strip()
                 items.append(line)
             elif items and line and not line.startswith('\\') and not line.startswith('202'):
                 items[-1] += ' ' + line.strip()
