@@ -1,20 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Publications | Jeffrey D. Michler</title>
-<meta content="Research publications by Jeffrey D. Michler." name="description"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Merriweather:ital,wght@0,300;0,400;1,300&amp;display=swap" rel="stylesheet"/>
-<!-- FontAwesome for Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Core CSS -->
-<link href="style.css" rel="stylesheet"/>
-<style>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Publications | Jeffrey D. Michler</title>
+    <meta
+      content="Research publications by Jeffrey D. Michler."
+      name="description"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Merriweather:ital,wght@0,300;0,400;1,300&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Core CSS -->
+    <link href="style.css" rel="stylesheet" />
+    <style>
       .pub-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -99,704 +108,1398 @@
         background-color: var(--color-bg-alt);
       }
     </style>
-<link as="image" href="photos/IMG_7551.webp" rel="preload"/>
-</head>
-<body>
-<!-- Navigation -->
-<nav class="navbar">
-<div class="container nav-container">
-<a class="nav-logo" href="index.html">Jeffrey D. Michler</a>
-<ul class="nav-links">
-<li><a class="nav-link" href="index.html">Home</a></li>
-<li><a class="nav-link" href="cv.html">CV &amp; Bio</a></li>
-<li>
-<a class="nav-link active" href="publications.html">Publications</a>
-</li>
-<li><a class="nav-link" href="teaching.html">Teaching</a></li>
-<li><a class="nav-link" href="software.html">Software</a></li>
-<li>
-<a class="nav-link" href="https://aidelab.arizona.edu/" rel="noopener noreferrer" target="_blank">AIDE Lab
-              <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 4px"></i></a>
-</li>
-</ul>
-</div>
-</nav>
-<!-- Page Header -->
-<header class="hero" style="min-height: 40vh">
-<!-- Using a placeholder background image for now -->
-<img alt="Publications Background" class="hero-bg" onerror="
+    <link as="image" href="photos/IMG_7551.webp" rel="preload" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a class="nav-logo" href="index.html">Jeffrey D. Michler</a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="cv.html">CV &amp; Bio</a></li>
+          <li>
+            <a class="nav-link active" href="publications.html">Publications</a>
+          </li>
+          <li><a class="nav-link" href="teaching.html">Teaching</a></li>
+          <li><a class="nav-link" href="software.html">Software</a></li>
+          <li>
+            <a
+              class="nav-link"
+              href="https://aidelab.arizona.edu/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >AIDE Lab
+              <i
+                class="fas fa-external-link-alt"
+                style="font-size: 0.8em; margin-left: 4px"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 40vh">
+      <!-- Using a placeholder background image for now -->
+      <img
+        alt="Publications Background"
+        class="hero-bg"
+        onerror="
           this.src =
             'https://source.unsplash.com/random/1600x900/?books,library'
-        " src="photos/IMG_7551.webp"/>
-<div class="container relative z-10">
-<div class="hero-content">
-<h1>Publications</h1>
-<p class="subtitle">Selected Research and Articles</p>
-</div>
-</div>
-</header>
-<!-- Main Content Area -->
-<main class="section">
-<div class="container">
-<div class="filter-buttons animate-on-scroll">
-<button class="filter-btn active" data-filter="all">All</button>
-<button class="filter-btn" data-filter="article">
+        "
+        src="photos/IMG_7551.webp"
+      />
+      <div class="container relative z-10">
+        <div class="hero-content">
+          <h1>Publications</h1>
+          <p class="subtitle">Selected Research and Articles</p>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content Area -->
+    <main class="section">
+      <div class="container">
+        <div class="filter-buttons animate-on-scroll">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="article">
             Journal Articles
           </button>
-<button class="filter-btn" data-filter="book">
+          <button class="filter-btn" data-filter="book">
             Books &amp; Chapters
           </button>
-<button class="filter-btn" data-filter="working">
+          <button class="filter-btn" data-filter="working">
             Working Papers
           </button>
-</div>
-<div class="pub-grid animate-on-scroll" id="pub-grid">
-<a class="pub-card" data-category="book" href="https://aidelab.arizona.edu/research-ethics-in-applied-economics-a-practical-guide" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-accent); color: white">Book</span>
-<h3 class="pub-title">
+        </div>
+        <div class="pub-grid animate-on-scroll" id="pub-grid">
+          <a
+            class="pub-card"
+            data-category="book"
+            href="research-ethics-in-applied-economics-a-practical-guide.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-accent); color: white"
+              >Book</span
+            >
+            <h3 class="pub-title">
               Research Ethics in Applied Economics: A Practical Guide
             </h3>
-<p class="pub-authors">Josephson, A. and J.D. Michler</p>
-<p class="pub-journal" style="font-weight: 500"></p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/comment-on-suri-2011-selection-and-comparative-advantage-in-technology-adoption" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+            <p class="pub-authors">Josephson, A. and J.D. Michler</p>
+            <p class="pub-journal" style="font-weight: 500"></p>
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="comment-on-suri-2011-selection-and-comparative-advantage-in-technology-adoption.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Comment on Suri (2011) `Selection and Comparative Advantage in
               Technology Adoption
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Tjernstrom, E., D. Ghanem, O. Barriga Cabanillas, T.J. Lybbert, A.
               Michuda, J.D. Michler
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Econometrica (2026)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/impact-evaluations-data-poor-settings" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="impact-evaluations-data-poor-settings.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/3 - IEDEC.jpg");
+                url(&quot;assets/images/publications/3 - IEDEC.jpg&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Impact Evaluations in Data-Scarce Environments: The Case of
               Stress-Tolerant Rice Varieties in Bangladesh.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., D.A. Al Rafi, J. Giezendanner, A. Josephson, V.
               Pede, and E. Tellman
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Journal of :Development Economics 179 (2026)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/mismeasure-weather" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="mismeasure-weather.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/4 - MWUEO.png");
+                url(&quot;assets/images/publications/4 - MWUEO.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               The Mismeasure of Weather: Using Earth Observation Data for
               Estimation of Socioeconomic Outcomes.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Josephson, A., J.D. Michler, T. Kilic, and S. Murray
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Journal of Development Economics 178 (2026)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/food-without-fire" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="food-without-fire.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/5 - FWFNE.png");
+                url(&quot;assets/images/publications/5 - FWFNE.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Food Without Fire: Nutritional and Environmental Impacts from a
               Solar Stove Field Experiment.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               McCann, L.E., J.D. Michler, M. Mwangala, O. Olurotimi, and N.
               Estrada Carmona
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               American Journal of Agricultural Economics (2025)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/coping-or-hoping" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="coping-or-hoping.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/6 - CHLDF.png");
+                url(&quot;assets/images/publications/6 - CHLDF.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Coping or Hoping? Livelihood Diversification and Food Insecurity
               in the COVID-19 Pandemic.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Furbush, A., A. Josephson, T. Kilic, and J.D. Michler
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Food Policy 131 (2025)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/expanding-undergraduate-research-experience" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="expanding-undergraduate-research-experience.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/7 - EUREO.png");
+                url(&quot;assets/images/publications/7 - EUREO.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Expanding Undergraduate Research Experience: Opportunities,
               Challenges, and Lessons for the Future.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Athnos, A., A. Josephson, J.D. Michler, and L. Rudin-Rush
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Applied Economics Teaching Resources 7 (2025)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/privacy-protection-measurement-error-and-integration-remote-sensing-and-socioeconomic-survey-data" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="privacy-protection-measurement-error-and-integration-remote-sensing-and-socioeconomic-survey-data.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/8 - PPMEI.png");
+                url(&quot;assets/images/publications/8 - PPMEI.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Privacy Protection, Measurement Error, and the Integration of
               Remote Sensing and Socioeconomic Survey Data.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., A. Josephson, T. Kilic, and S. Murray
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Journal of Development Economics 158 (2022)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/food-insecurity-during-first-year-covid-19-pandemic-four-african-countries" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="food-insecurity-during-first-year-covid-19-pandemic-four-african-countries.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/9 - FIDFY.png");
+                url(&quot;assets/images/publications/9 - FIDFY.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Food Insecurity During the First Year of the COVID-19 Pandemic in
               Four African Countries.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Rudin-Rush, L., J.D. Michler, A. Josephson, and J.R. Bloem
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Food Policy 111 (2022)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/risk-crop-yields-and-weather-index-insurance-in-village-india" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="risk-crop-yields-and-weather-index-insurance-in-village-india.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/28 - RDIPA.png");
+                url(&quot;assets/images/publications/28 - RDIPA.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Risk, Crop Yields, and Weather Index Insurance in Village India.
             </h3>
-<p class="pub-authors">Michler, J.D., F. Viens, and G. Shively</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D., F. Viens, and G. Shively</p>
+            <p class="pub-journal" style="font-weight: 500">
               Journal of the Agricultural &amp; Applied Economics Association 1
               (2022)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/socioeconomic-impacts-covid-19-low-income-countries" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="socioeconomic-impacts-covid-19-low-income-countries.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/11 - SICLC.png");
+                url(&quot;assets/images/publications/11 - SICLC.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Socioeconomic Impacts of COVID-19 in Low-Income Countries.
             </h3>
-<p class="pub-authors">Josephson, A., T. Kilic, and J.D. Michler</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Josephson, A., T. Kilic, and J.D. Michler</p>
+            <p class="pub-journal" style="font-weight: 500">
               Nature Human Behaviour 5 (2021)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/contract-farming-and-rural-transformation" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="contract-farming-and-rural-transformation.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/12 - CFRTE.png");
+                url(&quot;assets/images/publications/12 - CFRTE.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Contract Farming and Rural Transformation: Evidence from a Field
               Experiment in Benin.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Arouna, A., J.D. Michler, and J.C. Lokossou
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Journal of Development Economics 151 (2021)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/one-size-fits-all" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="one-size-fits-all.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/13 - SFEED.png");
+                url(&quot;assets/images/publications/13 - SFEED.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               One Size Fits All? Experimental Evidence on the Digital Delivery
               of Personalized Extension Advice in Nigeria.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Arouna, A., J.D. Michler, W.G. Yergo, and K. Saito
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               American Journal of Agricultural Economics 103 (2021)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/research-ethics-beyond-irb-selection-bias-and-direction-innovation-applied-economics" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="research-ethics-beyond-irb-selection-bias-and-direction-innovation-applied-economics.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/14 - REBSB.png");
+                url(&quot;assets/images/publications/14 - REBSB.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Research Ethics Beyond the IRB: Selection Bias and the Direction
               of Innovation in Applied Economics.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., W. Masters, and A. Josephson
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Applied Economic Perspectives and Policy 43 (2021)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/hrefhttpsdoiorg101002aepp13133ulysses" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">Ulysses' Pact or Ulysses' Raft: Using Pre-Analysis Plans in Experimental and Nonexperimental Research</h3>
-<p class="pub-authors">Janzen, S. and J.D. Michler</p>
-<p class="pub-journal" style="font-weight: 500">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="hrefhttpsdoiorg101002aepp13133ulysses.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
+              Ulysses' Pact or Ulysses' Raft: Using Pre-Analysis Plans in
+              Experimental and Nonexperimental Research
+            </h3>
+            <p class="pub-authors">Janzen, S. and J.D. Michler</p>
+            <p class="pub-journal" style="font-weight: 500">
               Applied Economic Perspectives and Policy 43 (2021)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/governance-and-contract-choice-theory-and-evidence-from-groundwater-irrigation-markets" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="governance-and-contract-choice-theory-and-evidence-from-groundwater-irrigation-markets.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Governance and Contract Choice: Theory and Evidence from
               Groundwater Irrigation Markets.
             </h3>
-<p class="pub-authors">Michler, J.D. and S.Y Wu</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D. and S.Y Wu</p>
+            <p class="pub-journal" style="font-weight: 500">
               Journal of Economic Behavior &amp; Organization 180 (2020)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/agriculture-process-development-micro-perspective" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="agriculture-process-development-micro-perspective.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/17 - AGRIC.png");
+                url(&quot;assets/images/publications/17 - AGRIC.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Agriculture in the Process of Development: A Micro-Perspective.
             </h3>
-<p class="pub-authors">Michler, J.D</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D</p>
+            <p class="pub-journal" style="font-weight: 500">
               World Development 129 (2020)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/relational-contracts-in-agriculture-theory-and-evidence" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="relational-contracts-in-agriculture-theory-and-evidence.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Relational Contracts in Agriculture: Theory and Evidence.
             </h3>
-<p class="pub-authors">Michler, J.D. and S.Y. Wu</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D. and S.Y. Wu</p>
+            <p class="pub-journal" style="font-weight: 500">
               Annual Review of Resource Economics 12 (2020)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/money-matters-role-yields-and-profits-agricultural-technology-adoption" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="money-matters-role-yields-and-profits-agricultural-technology-adoption.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/19 - MMRYP.png");
+                url(&quot;assets/images/publications/19 - MMRYP.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Money Matters: The Role of Yields and Profits in Agricultural
               Technology Adoption.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., E. Tjernstrom, S. Verkaart, and K. Mausch
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               American Journal of Agricultural Economics 101 (2019)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/conservation-agriculture-and-climate-resilience" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="conservation-agriculture-and-climate-resilience.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/20 - CONSE.png");
+                url(&quot;assets/images/publications/20 - CONSE.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Conservation Agriculture and Climate Resilience.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., K. Baylis, M. Arends-Kuenning, and K. Mazvimavi
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Journal of Environmental Economics and Management 93 (2019)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/foreign-geographical-indications-consumer-preferences-and-the-domestic-market-for-cheese" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="foreign-geographical-indications-consumer-preferences-and-the-domestic-market-for-cheese.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Foreign Geographical Indications, Consumer Preferences, and the
               Domestic Market for Cheese.
             </h3>
-<p class="pub-authors">Slade, P., J.D. Michler, and A. Josephson</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Slade, P., J.D. Michler, and A. Josephson</p>
+            <p class="pub-journal" style="font-weight: 500">
               Applied Economic Perspectives and Policy 41 (2019)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/beasts-field-ethics-agricultural-and-applied-economics" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="beasts-field-ethics-agricultural-and-applied-economics.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/22 - BFEAA.png");
+                url(&quot;assets/images/publications/22 - BFEAA.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Beasts of the Field? Ethics in Agricultural and Applied Economics.
             </h3>
-<p class="pub-authors">Josephson, A. and J.D. Michler</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Josephson, A. and J.D. Michler</p>
+            <p class="pub-journal" style="font-weight: 500">
               Food Policy 79 (2018)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/fitting-and-interpreting-correlated-random-coefficient-models-using-stata" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="fitting-and-interpreting-correlated-random-coefficient-models-using-stata.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Fitting and Interpreting Correlated Random-Coefficient Models
               Using Stata.
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Barriga Cabanillas, O., J.D. Michler, A. Michuda, and E.
               Tjernstrom
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Stata Journal 18 (2018)
             </p>
-</a>
-<a class="pub-card has-bg-image" data-category="article" href="https://aidelab.arizona.edu/specialize-or-diversify-agricultural-diversity-and-poverty-dynamics-ethiopia" rel="noopener noreferrer" style='background:
+          </a>
+          <a
+            class="pub-card has-bg-image"
+            data-category="article"
+            href="specialize-or-diversify-agricultural-diversity-and-poverty-dynamics-ethiopia.html"
+            rel="noopener noreferrer"
+            style="
+              background:
                 linear-gradient(
                   to bottom,
                   rgba(15, 23, 42, 0.4) 0%,
                   rgba(15, 23, 42, 0.7) 100%
                 ),
-                url("assets/images/publications/24 - SDADP.png");
+                url(&quot;assets/images/publications/24 - SDADP.png&quot;);
               background-size: cover;
               background-position: center;
-             text-decoration: none; color: inherit; display: flex; flex-direction: column;' target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               To Specialize or Diversify: Agricultural Diversity and Poverty
               Dynamics in Ethiopia.
             </h3>
-<p class="pub-authors">Michler, J.D. and A. Josephson</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D. and A. Josephson</p>
+            <p class="pub-journal" style="font-weight: 500">
               World Development 89 (2017)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/the-importance-of-the-savings-device-in-precautionary-savings-empirical-evidence-from-rural-bangladesh" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="the-importance-of-the-savings-device-in-precautionary-savings-empirical-evidence-from-rural-bangladesh.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               The Importance of the Savings Device in Precautionary Savings:
               Empirical Evidence from Rural Bangladesh.
             </h3>
-<p class="pub-authors">Michler, J.D. and J.V. Balagtas</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D. and J.V. Balagtas</p>
+            <p class="pub-journal" style="font-weight: 500">
               Agricultural Economics 48 (2017)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/welfare-impacts-of-improved-chickpea-adoption-a-pathway-for-rural-development-in-ethiopia" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="welfare-impacts-of-improved-chickpea-adoption-a-pathway-for-rural-development-in-ethiopia.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Welfare Impacts of Improved Chickpea Adoption: A Pathway for Rural
               Development in Ethiopia?
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Verkaart, S., B. Munyua, K. Mausch, and J.D. Michler
             </p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-journal" style="font-weight: 500">
               Food Policy 66 (2017)
             </p>
-</a>
-<a class="pub-card" data-category="article" href="https://aidelab.arizona.edu/land-tenure-tenure-security-and-farm-efficiency-panel-evidence-from-the-philippines" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-primary-light); color: white">Journal Article</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="article"
+            href="land-tenure-tenure-security-and-farm-efficiency-panel-evidence-from-the-philippines.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-primary-light); color: white"
+              >Journal Article</span
+            >
+            <h3 class="pub-title">
               Land Tenure, Tenure Security and Farm Efficiency: Panel Evidence
               from the Philippines.
             </h3>
-<p class="pub-authors">Michler, J.D. and G. Shively</p>
-<p class="pub-journal" style="font-weight: 500">
+            <p class="pub-authors">Michler, J.D. and G. Shively</p>
+            <p class="pub-journal" style="font-weight: 500">
               Journal of Agricultural Economics 66 (2015)
             </p>
-</a>
-</div>
-<div style="text-align: center; margin-top: 3rem">
-<p style="color: var(--color-text-muted)">
+          </a>
+        </div>
+        <div style="text-align: center; margin-top: 3rem">
+          <p style="color: var(--color-text-muted)">
             For a complete list of publications, presentations, and working
             papers, please refer to my <a href="cv.html">Curriculum Vitae</a>.
           </p>
-<a class="btn btn-primary" href="https://scholar.google.com/citations?user=akcW2fkAAAAJ" rel="noopener noreferrer" style="margin-top: 1rem" target="_blank">View Google Scholar</a>
-</div>
-<!-- Book Chapters Section -->
-<h2 class="section-title" style="margin-top: 3rem">Book Chapters</h2>
-<div class="pub-grid animate-on-scroll">
-<a class="pub-card" data-category="book" href="https://aidelab.arizona.edu/recent-developments-inference-practicalities-applied-economics" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-accent); color: white">Book Chapter</span>
-<h3 class="pub-title">
+          <a
+            class="btn btn-primary"
+            href="https://scholar.google.com/citations?user=akcW2fkAAAAJ"
+            rel="noopener noreferrer"
+            style="margin-top: 1rem"
+            target="_blank"
+            >View Google Scholar</a
+          >
+        </div>
+        <!-- Book Chapters Section -->
+        <h2 class="section-title" style="margin-top: 3rem">Book Chapters</h2>
+        <div class="pub-grid animate-on-scroll">
+          <a
+            class="pub-card"
+            data-category="book"
+            href="recent-developments-inference-practicalities-applied-economics.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-accent); color: white"
+              >Book Chapter</span
+            >
+            <h3 class="pub-title">
               Recent Developments in Inference: Practicalities for the Applied
               Economist
             </h3>
-<p class="pub-authors">Michler, J.D. and A. Josephson. 2022.</p>
-<p class="pub-journal">
+            <p class="pub-authors">Michler, J.D. and A. Josephson. 2022.</p>
+            <p class="pub-journal">
               In J. Roosen and J.E. Hobbs, eds., A Modern Guide to Food
               Economics. Cheltenham: Edward Elgar Publishing.
             </p>
-</a>
-<a class="pub-card" data-category="book" href="https://aidelab.arizona.edu/evolving-impact-covid-19-four-african-countries" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-accent); color: white">Book Chapter</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="book"
+            href="evolving-impact-covid-19-four-african-countries.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-accent); color: white"
+              >Book Chapter</span
+            >
+            <h3 class="pub-title">
               The Evolving Impact of COVID-19 in Four African Countries
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Furbush, A., A. Josephson, T. Kilic, and J.D. Michler. 2021.
             </p>
-<p class="pub-journal">
+            <p class="pub-journal">
               In R. Arezki, S. Djankov, and U. Panizza, eds., Shaping Africa’s
               Post-Covid Recovery. London: CEPR Press.
             </p>
-</a>
-</div>
-<!-- Working Papers Section -->
-<h2 class="section-title" style="margin-top: 3rem">Working Papers</h2>
-<div class="pub-grid animate-on-scroll">
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/the-uses-and-misuses-of-weather-and-earth-observation-data-in-geospatial-impact-evaluations" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+        </div>
+        <!-- Working Papers Section -->
+        <h2 class="section-title" style="margin-top: 3rem">Working Papers</h2>
+        <div class="pub-grid animate-on-scroll">
+          <a
+            class="pub-card"
+            data-category="working"
+            href="the-uses-and-misuses-of-weather-and-earth-observation-data-in-geospatial-impact-evaluations.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               The Uses (and Misuses) of Weather and Earth Observation Data in
               Geospatial Impact Evaluations
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Benami, E., M. Cecil, A. Josephson, G. Maskell, and J.D. Michler
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/considerations-and-resources-for-integrating-eo-and-socioeconomic-data" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="considerations-and-resources-for-integrating-eo-and-socioeconomic-data.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Considerations and Resources for Integrating EO and Socioeconomic
               Data
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., E. Benami, A. Josephson, G. Maskell, M. Cecil, P.
               Behrer, R. Heilmayr, S. Gourlay, and K.Singh
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/mining-meaning-conducting-ai-assisted-reviews-of-economic-literature" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="mining-meaning-conducting-ai-assisted-reviews-of-economic-literature.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Mining Meaning: Conducting AI-Assisted Reviews of Economic
               Literature
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., K. Douglas, and A. Josephson
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/variable-selection-economic-applications-remotely-sensed-weather-data" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="variable-selection-economic-applications-remotely-sensed-weather-data.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Variable Selection in Socioeconomic Applications of Remotely
               Sensed Weather Data: Insights from the LSMS-ISA
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Michler, J.D., A. Josephson, C.D. Agme and T. Kilic
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/labor-credit-and-markets-evidence-from-the-philippines-1971-2016" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="labor-credit-and-markets-evidence-from-the-philippines-1971-2016.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Labor, Credit, and Markets: Evidence from the Philippines,
               1971-2016
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Kee-Tui, E., A. Josephson, and J.D. Michler
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/risk-and-rainfall-specification-sensitivity-estimating-smallholder-risk-preferences" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="risk-and-rainfall-specification-sensitivity-estimating-smallholder-risk-preferences.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Risk and Rainfall: Specification Sensitivity in Estimating
               Smallholder Risk Preferences
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Braham, R., A. Josephson, and J.D. Michler
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/approximation-in-complex-pricing-mechanisms" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="approximation-in-complex-pricing-mechanisms.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Approximation in Complex Pricing Mechanisms
             </h3>
-<p class="pub-authors">Michler, J.D., P. Slade, and S.Y. Wu</p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/complex-pricing-and-consumer-behavior-evidence-from-a-lab-experiment" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+            <p class="pub-authors">Michler, J.D., P. Slade, and S.Y. Wu</p>
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="complex-pricing-and-consumer-behavior-evidence-from-a-lab-experiment.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Complex Pricing and Consumer Behavior: Evidence from a Lab
               Experiment
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Deutschmann, J.W., J.D. Michler, and E. Tjernström
             </p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/a-dynamic-model-of-firm-location-in-two-dimensional-space" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="a-dynamic-model-of-firm-location-in-two-dimensional-space.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               A Dynamic Model of Firm Location in Two-Dimensional Space
             </h3>
-<p class="pub-authors">Michler, J.D., S.D. Yun, and B. Gramig</p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/an-industrious-revolution-changes-in-the-household-economy-in-rural-bangladesh" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+            <p class="pub-authors">Michler, J.D., S.D. Yun, and B. Gramig</p>
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="an-industrious-revolution-changes-in-the-household-economy-in-rural-bangladesh.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               An Industrious Revolution? Changes in the Household Economy in
               Rural Bangladesh
             </h3>
-<p class="pub-authors">Josephson, A., J.D. Michler, and A. Orr</p>
-</a>
-<a class="pub-card" data-category="working" href="https://aidelab.arizona.edu/effects-of-credit-and-market-access-on-farm-gate-prices-in-india" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;" target="_blank">
-<span class="card-tag" style="background-color: var(--color-secondary); color: white">Working Paper</span>
-<h3 class="pub-title">
+            <p class="pub-authors">Josephson, A., J.D. Michler, and A. Orr</p>
+          </a>
+          <a
+            class="pub-card"
+            data-category="working"
+            href="effects-of-credit-and-market-access-on-farm-gate-prices-in-india.html"
+            rel="noopener noreferrer"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              flex-direction: column;
+            "
+            target="_blank"
+          >
+            <span
+              class="card-tag"
+              style="background-color: var(--color-secondary); color: white"
+              >Working Paper</span
+            >
+            <h3 class="pub-title">
               Effects of Credit and Market Access on Farm Gate Prices in India
             </h3>
-<p class="pub-authors">
+            <p class="pub-authors">
               Baylis, K., M. Mallory, J.D. Michler, and T. Songsermsawa
             </p>
-</a>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="footer">
-<div class="container footer-content">
-<div>
-<p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <p>
             ©
             <script>
               document.write(new Date().getFullYear());
             </script>
             Jeffrey D. Michler. All rights reserved.
           </p>
-<p style="color: var(--color-text-muted); font-size: 0.9rem">
+          <p style="color: var(--color-text-muted); font-size: 0.9rem">
             McClelland Park 301K | Tucson, AZ 85721 |
-            <a href="mailto:jdmichler@arizona.edu" style="color: var(--color-text-muted); text-decoration: underline">jdmichler@arizona.edu</a>
-</p>
-</div>
-<div class="social-links">
-<a href="mailto:jdmichler@arizona.edu" title="Email"><i class="fas fa-envelope"></i></a>
-<a href="https://aaec.arizona.edu/person/jeffrey-d-michler" rel="noopener noreferrer" target="_blank" title="Departmental Website"><i class="fas fa-university"></i></a>
-<a href="https://orcid.org/0000-0001-7778-8703" rel="noopener noreferrer" target="_blank" title="ORCiD"><i class="fab fa-orcid"></i></a>
-<a href="https://scholar.google.com/citations?user=akcW2fkAAAAJ" rel="noopener noreferrer" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-<a href="https://github.com/jdavidm" rel="noopener noreferrer" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-</div>
-</div>
-</footer>
-<!-- Core JS -->
-<script src="main.js"></script>
-<script>
+            <a
+              href="mailto:jdmichler@arizona.edu"
+              style="color: var(--color-text-muted); text-decoration: underline"
+              >jdmichler@arizona.edu</a
+            >
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="mailto:jdmichler@arizona.edu" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://aaec.arizona.edu/person/jeffrey-d-michler"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Departmental Website"
+            ><i class="fas fa-university"></i
+          ></a>
+          <a
+            href="https://orcid.org/0000-0001-7778-8703"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="ORCiD"
+            ><i class="fab fa-orcid"></i
+          ></a>
+          <a
+            href="https://scholar.google.com/citations?user=akcW2fkAAAAJ"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Google Scholar"
+            ><i class="fas fa-graduation-cap"></i
+          ></a>
+          <a
+            href="https://github.com/jdavidm"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Core JS -->
+    <script src="main.js"></script>
+    <script>
       // Simple filtering logic
       document.addEventListener("DOMContentLoaded", () => {
         const filterBtns = document.querySelectorAll(".filter-btn");
@@ -825,5 +1528,5 @@
         });
       });
     </script>
-</body>
+  </body>
 </html>
