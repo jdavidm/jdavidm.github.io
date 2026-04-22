@@ -1,25 +1,28 @@
 :root {
   /* Color Palette */
-  --color-primary: #AB0520; /* Cardinal Red */
-  --color-primary-light: #D6082A;
-  --color-primary-dark: #7A0316;
-  --color-accent: #0C234B; /* Navy Blue */
-  --color-accent-hover: #1A3C78;
-  
+  --color-primary: #ab0520; /* Cardinal Red */
+  --color-primary-light: #d6082a;
+  --color-primary-dark: #7a0316;
+  --color-accent: #0c234b; /* Navy Blue */
+  --color-accent-hover: #1a3c78;
+
   --color-bg-main: #f8fafc; /* Very light slate for main background */
   --color-bg-surface: #ffffff; /* White for cards/containers */
   --color-bg-alt: #f1f5f9;
-  
+
   --color-text-main: #334155; /* Slate gray for readable text */
   --color-text-muted: #64748b;
   --color-text-heading: #0f172a; /* Darkest slate for headings */
-  
+
   --color-border: #e2e8f0;
 
   /* Typography */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-serif: 'Merriweather', Georgia, serif; /* Occasional use for academic feel */
-  
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-serif:
+    "Merriweather", Georgia, serif; /* Occasional use for academic feel */
+
   /* Layout & Spacing */
   --max-width: 1200px;
   --spacing-xs: 0.5rem;
@@ -27,17 +30,20 @@
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  
+
   /* Effects */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --radius-full: 9999px;
-  
+
   --transition-fast: 0.15s ease-in-out;
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,17 +72,32 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-text-heading);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
 }
 
-h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
-h2 { font-size: 2rem; letter-spacing: -0.01em; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
 
 p {
   margin-bottom: var(--spacing-sm);
@@ -170,7 +191,7 @@ a:hover {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -209,7 +230,6 @@ a:hover {
   object-fit: cover;
   z-index: 0;
   opacity: 0.3; /* Darken background for text readability */
-
 }
 
 .hero-content {
@@ -406,7 +426,9 @@ a:hover {
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .animate-on-scroll.is-visible {
@@ -434,20 +456,28 @@ a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  
-  .hero h1 { font-size: 2.5rem; }
-  .hero .subtitle { font-size: 1.25rem; }
-  
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero .subtitle {
+    font-size: 1.25rem;
+  }
+
   .split-section {
     grid-template-columns: 1fr;
   }
-  
+
   .nav-links {
     display: none; /* Add mobile menu logic here, typically a hamburger */
   }
-  
+
   .section {
     padding: var(--spacing-md) 0;
   }
@@ -455,67 +485,70 @@ a:hover {
 
 /* Publication Cards Specifics */
 .pub-card {
-    position: relative;
-    border-radius: var(--radius-md);
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    background-color: var(--color-bg-surface);
+  position: relative;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: var(--color-bg-surface);
 }
 
 .pub-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
 .pub-card.has-bg-image {
-    color: #f8fafc; /* text-slate-50 */
-    border: none;
+  color: #f8fafc; /* text-slate-50 */
+  border: none;
 }
 
 .pub-card.has-bg-image .pub-title {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .pub-card.has-bg-image .pub-authors {
-    color: #cbd5e1; /* text-slate-300 */
+  color: #cbd5e1; /* text-slate-300 */
 }
 
 .pub-card.has-bg-image .pub-journal {
-    color: #e2e8f0; /* text-slate-200 */
+  color: #e2e8f0; /* text-slate-200 */
 }
 
 .pub-card.has-bg-image .pub-links a {
-    color: #93c5fd; /* text-blue-300 */
+  color: #93c5fd; /* text-blue-300 */
 }
 
 .pub-card.has-bg-image .pub-links a:hover {
-    color: #bfdbfe; /* text-blue-200 */
+  color: #bfdbfe; /* text-blue-200 */
 }
-
 
 /* Update badge style to have hover effects */
 .badge {
-    transition: background-color var(--transition-fast), color var(--transition-fast);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .badge:hover {
-    background-color: var(--color-primary-light);
-    color: white;
+  background-color: var(--color-primary-light);
+  color: white;
 }
 
 a.badge-link {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
 
 a.badge-link:hover {
-    background-color: var(--color-primary);
-    color: white;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-sm);
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
