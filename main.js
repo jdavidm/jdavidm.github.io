@@ -31,11 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       (currentPath === "" && linkPath === "index.html")
     ) {
       link.classList.add("active");
-    } else {
-      // For sections on the same page (e.g. #about)
-      if (linkPath.startsWith("#") && currentPath === "index.html") {
-        // Simple scroll spy logic could go here if needed
-      }
     }
   });
 
