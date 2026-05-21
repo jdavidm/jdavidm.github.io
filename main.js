@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile Navigation Toggle
   const mobileBtn = document.createElement("button");
   mobileBtn.classList.add("mobile-menu-btn");
-  mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
+  const icon = document.createElement("i");
+  icon.classList.add("fas", "fa-bars");
+  mobileBtn.appendChild(icon);
   mobileBtn.style.display = "none"; // Controlled by CSS
   mobileBtn.style.background = "none";
   mobileBtn.style.border = "none";
